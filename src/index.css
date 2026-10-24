@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brown: #190019;
+  --color-midnight: #2B124C;
+  --color-plum: #522B5B;
+  --color-mauve: #854F6C;
+  --color-blush: #DFB6B2;
+  --color-peach: #EDCDC5;
+  --color-cream: #FBE4D8;
+
+  --font-brand: 'Algerian', 'Cinzel Decorative', serif;
+
+  --animate-fade-in: fade-in 0.8s ease-out;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-brown);
+}
